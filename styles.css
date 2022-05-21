@@ -1,0 +1,95 @@
+*{
+    font-family: sans-serif;
+    line-height: 1.618rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+   margin-top: 3em;
+   background-color: aquamarine;
+}
+h1,h2,h3{
+    color: #666;
+}
+
+header, main, footer{
+    max-width: 800px;
+    margin:0 auto;
+}
+header{
+    padding: 3em 0;
+}
+ header span{
+     font-size: 1.5em;
+     color: #999;
+
+}
+header h1 {
+    font-size: 3em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #333;
+
+    display: flex;
+    flex-flow:row ;
+    justify-content: center;
+
+}
+
+nav a{
+    padding: .5em 2em;
+    text-decoration:none;
+    color: #fff;
+}
+
+nav a:hover{
+    background: burlywood;
+}
+section{
+    margin: 1em;
+    padding-top: 3em;
+    min-height: 20em;
+
+}
+section >p {
+    margin:1em 0 ;
+}
+
+section ul{
+    padding-left: 1.5em;
+
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-column-gap:1em ;
+
+}
+#products article{
+    background: #ccc;
+    padding: 1.5em;
+    
+}
+#products article img{
+    width: 100%;
+    border: 3px solid rgb(225, 162, 36);
+
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom:1em ;
+    background: #666;
+    color: #fff;
+    text-align: center;
+
+}
